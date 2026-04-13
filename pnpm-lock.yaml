@@ -18,6 +18,72 @@ importers:
         specifier: 5.9.2
         version: 5.9.2
 
+  apps/Sade:
+    devDependencies:
+      '@eslint/compat':
+        specifier: ^2.0.3
+        version: 2.0.3(eslint@10.1.0)
+      '@eslint/js':
+        specifier: ^10.0.1
+        version: 10.0.1(eslint@10.1.0)
+      '@fontsource-variable/google-sans-flex':
+        specifier: ^5.2.1
+        version: 5.2.1
+      '@ktibow/iconset-material-symbols':
+        specifier: ^0.0.1764827375
+        version: 0.0.1764827375
+      '@sveltejs/adapter-auto':
+        specifier: ^7.0.0
+        version: 7.0.1(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.1(@types/node@22.15.3)))(svelte@5.55.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.15.3)))
+      '@sveltejs/kit':
+        specifier: ^2.50.2
+        version: 2.55.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.1(@types/node@22.15.3)))(svelte@5.55.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.15.3))
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^6.2.4
+        version: 6.2.4(svelte@5.55.1)(vite@7.3.1(@types/node@22.15.3))
+      '@types/node':
+        specifier: ^22
+        version: 22.15.3
+      eslint:
+        specifier: ^10.0.3
+        version: 10.1.0
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@10.1.0)
+      eslint-plugin-svelte:
+        specifier: ^3.15.2
+        version: 3.16.0(eslint@10.1.0)(svelte@5.55.1)
+      globals:
+        specifier: ^17.4.0
+        version: 17.4.0
+      m3-svelte:
+        specifier: ^7.1.2
+        version: 7.1.2(svelte@5.55.1)(vite-plugin-functions-mixins@0.4.1(vite@7.3.1(@types/node@22.15.3)))
+      prettier:
+        specifier: ^3.8.1
+        version: 3.8.1
+      prettier-plugin-svelte:
+        specifier: ^3.4.1
+        version: 3.5.1(prettier@3.8.1)(svelte@5.55.1)
+      svelte:
+        specifier: ^5.54.0
+        version: 5.55.1
+      svelte-check:
+        specifier: ^4.4.2
+        version: 4.4.5(picomatch@4.0.3)(svelte@5.55.1)(typescript@5.9.3)
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+      typescript-eslint:
+        specifier: ^8.57.0
+        version: 8.58.0(eslint@10.1.0)(typescript@5.9.3)
+      vite:
+        specifier: ^7.3.1
+        version: 7.3.1(@types/node@22.15.3)
+      vite-plugin-functions-mixins:
+        specifier: ^0.4.1
+        version: 0.4.1(vite@7.3.1(@types/node@22.15.3))
+
   apps/auraclicker:
     devDependencies:
       '@eslint/compat':
@@ -137,6 +203,72 @@ importers:
       vite:
         specifier: ^7.3.1
         version: 7.3.1(@types/node@22.15.3)
+
+  apps/test-page:
+    devDependencies:
+      '@eslint/compat':
+        specifier: ^2.0.3
+        version: 2.0.3(eslint@10.1.0)
+      '@eslint/js':
+        specifier: ^10.0.1
+        version: 10.0.1(eslint@10.1.0)
+      '@fontsource-variable/google-sans-flex':
+        specifier: ^5.2.1
+        version: 5.2.1
+      '@ktibow/iconset-material-symbols':
+        specifier: ^0.0.1764827375
+        version: 0.0.1764827375
+      '@sveltejs/adapter-auto':
+        specifier: ^7.0.0
+        version: 7.0.1(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.1(@types/node@22.15.3)))(svelte@5.55.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.15.3)))
+      '@sveltejs/kit':
+        specifier: ^2.50.2
+        version: 2.55.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.1(@types/node@22.15.3)))(svelte@5.55.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.15.3))
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^6.2.4
+        version: 6.2.4(svelte@5.55.1)(vite@7.3.1(@types/node@22.15.3))
+      '@types/node':
+        specifier: ^22
+        version: 22.15.3
+      eslint:
+        specifier: ^10.0.3
+        version: 10.1.0
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@10.1.0)
+      eslint-plugin-svelte:
+        specifier: ^3.15.2
+        version: 3.16.0(eslint@10.1.0)(svelte@5.55.1)
+      globals:
+        specifier: ^17.4.0
+        version: 17.4.0
+      m3-svelte:
+        specifier: ^7.1.2
+        version: 7.1.2(svelte@5.55.1)(vite-plugin-functions-mixins@0.4.1(vite@7.3.1(@types/node@22.15.3)))
+      prettier:
+        specifier: ^3.8.1
+        version: 3.8.1
+      prettier-plugin-svelte:
+        specifier: ^3.4.1
+        version: 3.5.1(prettier@3.8.1)(svelte@5.55.1)
+      svelte:
+        specifier: ^5.54.0
+        version: 5.55.1
+      svelte-check:
+        specifier: ^4.4.2
+        version: 4.4.5(picomatch@4.0.3)(svelte@5.55.1)(typescript@5.9.3)
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+      typescript-eslint:
+        specifier: ^8.57.0
+        version: 8.58.0(eslint@10.1.0)(typescript@5.9.3)
+      vite:
+        specifier: ^7.3.1
+        version: 7.3.1(@types/node@22.15.3)
+      vite-plugin-functions-mixins:
+        specifier: ^0.4.1
+        version: 0.4.1(vite@7.3.1(@types/node@22.15.3))
 
   apps/xambao-homepage:
     devDependencies:
@@ -507,6 +639,9 @@ packages:
     resolution: {integrity: sha512-iH1B076HoAshH1mLpHMgwdGeTs0CYwL0SPMkGuSebZrwBp16v415e9NZXg2jtrqPVQjf6IANe2Vtlr5KswtcZQ==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
+  '@fontsource-variable/google-sans-flex@5.2.1':
+    resolution: {integrity: sha512-CZzNhNK6NTjJsX3SP2g/WWzldFzSiSHrE1DtXh2Nkbflb40CGtP3G+1OABongwrNV3Tu/bUfirgcP14ajcglMw==}
+
   '@fontsource/fira-mono@5.2.7':
     resolution: {integrity: sha512-wYrAn6i3nH6luqQBZxtWUpl4UTUvs9AEbEeZxksPMwIqyjRRaxHTNW3c2VfM50gabS2IS7pT8lVWS2USB4ukYA==}
 
@@ -526,6 +661,9 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
+  '@iconify/types@2.0.0':
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
+
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
 
@@ -541,6 +679,9 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@ktibow/iconset-material-symbols@0.0.1764827375':
+    resolution: {integrity: sha512-D5r08cbHpLn+G2G03Zj3nV0afQpS/IV4kD0g7rDHpU4k7tC/CUt6+PbddKISTWz8u+SRPQNaR5cZU0e9IlUoWg==}
 
   '@neoconfetti/svelte@2.2.2':
     resolution: {integrity: sha512-E7xCFVEEm5Ctnj2udTJy1b9oaTvjz1zi1mYdEtE8rB5BVwq6kHisosDS+zdWN5PMfEMjtbsOV9Cl6tsNSAD1sA==}
@@ -1593,6 +1734,18 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
+  m3-svelte@7.1.2:
+    resolution: {integrity: sha512-Em8NPhHcPoiwbeyqa5xGzBl9wvoM0jVtHpj74YvgWgX29lH1QcTy253kXuG8VawurNYuw/AtpVVuRqQ22DWhig==}
+    peerDependencies:
+      '@ktibow/material-color-utilities-nightly': ^0.4.1768930731000
+      svelte: ^5.40.0
+      vite-plugin-functions-mixins: ^0.4.1
+    peerDependenciesMeta:
+      '@ktibow/material-color-utilities-nightly':
+        optional: true
+      vite-plugin-functions-mixins:
+        optional: true
+
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
@@ -2037,6 +2190,11 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  vite-plugin-functions-mixins@0.4.1:
+    resolution: {integrity: sha512-xl9wCfeEvJls+5wnEa76xQ3nrnNOw1Zm9C4mc49dQrHTXRNTV3mwOsFILGxRsjOCm6mJwp3TfjIDFbyFPppe1g==}
+    peerDependencies:
+      vite: ^7.2.4
+
   vite@7.3.1:
     resolution: {integrity: sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -2290,6 +2448,8 @@ snapshots:
       '@eslint/core': 1.1.1
       levn: 0.4.1
 
+  '@fontsource-variable/google-sans-flex@5.2.1': {}
+
   '@fontsource/fira-mono@5.2.7': {}
 
   '@humanfs/core@0.19.1': {}
@@ -2302,6 +2462,8 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.4.3': {}
+
+  '@iconify/types@2.0.0': {}
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
@@ -2321,6 +2483,10 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@ktibow/iconset-material-symbols@0.0.1764827375':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@neoconfetti/svelte@2.2.2(svelte@5.55.1)':
     dependencies:
@@ -3545,6 +3711,14 @@ snapshots:
     dependencies:
       js-tokens: 4.0.0
 
+  m3-svelte@7.1.2(svelte@5.55.1)(vite-plugin-functions-mixins@0.4.1(vite@7.3.1(@types/node@22.15.3))):
+    dependencies:
+      '@iconify/types': 2.0.0
+      '@ktibow/iconset-material-symbols': 0.0.1764827375
+      svelte: 5.55.1
+    optionalDependencies:
+      vite-plugin-functions-mixins: 0.4.1(vite@7.3.1(@types/node@22.15.3))
+
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -4082,6 +4256,10 @@ snapshots:
       punycode: 2.3.1
 
   util-deprecate@1.0.2: {}
+
+  vite-plugin-functions-mixins@0.4.1(vite@7.3.1(@types/node@22.15.3)):
+    dependencies:
+      vite: 7.3.1(@types/node@22.15.3)
 
   vite@7.3.1(@types/node@22.15.3):
     dependencies:
