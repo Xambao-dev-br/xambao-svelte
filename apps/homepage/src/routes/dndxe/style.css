@@ -1,0 +1,19 @@
+.inline {
+    display: inline;
+    justify-content: space-between;
+}
+
+button.rollA {
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 10%;
+    background-color: rgb(199, 92, 199);
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: rgb(150, 50, 150);
+}
