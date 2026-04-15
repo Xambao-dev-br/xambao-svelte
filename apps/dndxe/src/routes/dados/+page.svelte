@@ -34,7 +34,7 @@
 		resultado = 0;
 		carregando = true;
 		try {
-			await Promise.all(Object.values(diceMap).map((d) => rollD(d)));
+			await Promise.all(Object.values(diceMap).map((d: dice) => rollD(d)));
 		} catch (e) {
 			erro = `erro: ${e}`;
 		} finally {

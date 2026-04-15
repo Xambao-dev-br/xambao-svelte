@@ -1,5 +1,5 @@
 {
-	"name": "xhomepage",
+	"name": "dndxe",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -12,9 +12,6 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
-	},
-	"dependencies": {
-		"@xambao/database": "workspace:*"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^2.0.3",
