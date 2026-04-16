@@ -1,8 +1,25 @@
 <script lang="ts">
 	import { Button } from 'm3-svelte';
-    /*if(logged){
+	/*if(logged){
         open(homepage)
     }*/
 </script>
 
+<div class="authL">
+	<section>
+		<label class="authLabel" for="username">Nome de usuário ou e-mail:</label>
+		<br />
+		<input class="authText" type="text" id="username" name="user" />
+	</section>
+	<section>
+		<label for="password" class="authLabel">Senha:</label>
+		<br />
+		<input type="password" name="password" id="pass" class="authText" />
+	</section>
+	<Button type="submit" id="Enviar">Entrar na conta</Button>
+</div>
+<p class="cadastro"><a href="cadastro">Não tem conta? Criar conta aqui</a></p>
 
+<style>
+	@import './style.css';
+</style>

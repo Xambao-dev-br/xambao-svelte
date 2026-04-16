@@ -1,0 +1,55 @@
+.authText {
+    background-color: rgb(154, 84, 201);
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    width: 95%;
+    height: 30px;
+    font-size: 16pt;
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (min-width:600px) and (max-width:840px) {
+
+    .authText {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .authL {
+        font-size: 10pt;
+    }
+
+    .authText {
+        height: 20px;
+        font-size: 10pt;
+    }
+
+    .cadastro {
+        font-size: 10pt;
+    }
+}
+
+#enviar {
+    width: calc(90%-80px)
+}
+
+.authL {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.authL section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cadastro {
+    margin-left: 3%;
+}
