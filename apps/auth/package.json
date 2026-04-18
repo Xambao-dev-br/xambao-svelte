@@ -14,7 +14,9 @@
 		"format": "prettier --write ."
 	},
 	"dependencies": {
-		"@xambao/database": "workspace:*"
+		"@types/bcrypt": "^6.0.0",
+		"@xambao/database": "workspace:*",
+		"bcrypt": "^6.0.0"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^2.0.3",

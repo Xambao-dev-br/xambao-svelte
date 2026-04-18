@@ -33,6 +33,12 @@
     }
 }
 
+
+
+section {
+    margin-bottom: 10px;
+}
+
 #enviar {
     width: calc(90%-80px)
 }

@@ -1,23 +1,26 @@
 <script lang="ts">
 	import { Button } from 'm3-svelte';
-	/*if(logged){
-        open(homepage)
-    }*/
+	let { data } = $props<{ users: any[] }>();
+	
+
 </script>
 
 <div class="authL">
-	<section>
-		<label class="authLabel" for="username">Nome de usuário ou e-mail:</label>
-		<br />
-		<input class="authText" type="text" id="username" name="user" />
-	</section>
-	<section>
-		<label for="password" class="authLabel">Senha:</label>
-		<br />
-		<input type="password" name="password" id="pass" class="authText" />
-	</section>
-	<Button type="submit" id="Enviar">Entrar na conta</Button>
+	<form method="POST">
+		<section>
+			<label class="authLabel" for="username">Nome de usuário:</label>
+			<br />
+			<input class="authText" type="text" id="username" name="user" />
+		</section>
+		<section>
+			<label for="password" class="authLabel">Senha:</label>
+			<br />
+			<input type="password" name="password" id="pass" class="authText" />
+		</section>
+		<Button type="submit" id="Enviar">Entrar na conta</Button>
+	</form>
 </div>
+
 <p class="cadastro"><a href="cadastro">Não tem conta? Criar conta aqui</a></p>
 
 <style>
