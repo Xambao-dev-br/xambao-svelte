@@ -2,7 +2,6 @@ import { supabase } from "$lib/supabase.server";
 import bcrypt from 'bcrypt'
 import { redirect } from "@sveltejs/kit";
 import { randomUUID } from "crypto";
-import { strict } from "assert";
 export const actions = {
     'default': async function ({ request, cookies }) {
         const form = await request.formData();
@@ -29,9 +28,10 @@ export const actions = {
                 sameSite: 'strict'
             })
 
-            redirect(303, 'http://localhost:5175/')
+            redirect(303, 'http://localhost:5174/')
         } else {
             return { success: false, message: 'Ta errado dog' }
+            window.alert("Ta errado dog!")
         }
     }
 

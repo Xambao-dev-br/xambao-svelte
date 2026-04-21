@@ -1,6 +1,6 @@
 import { createSupabaseClient } from '@xambao/database'
-
+import { SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY } from '$env/static/private'
 export const supabase = createSupabaseClient(
-    import.meta.env.VITE_SUPABASE_URL,
-    import.meta.env.VITE_SUPABASE_ANON_KEY
+    SUPABASE_URL,
+    SUPABASE_SERVICE_ROLE_KEY
 )

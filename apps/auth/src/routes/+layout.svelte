@@ -31,7 +31,7 @@
 		/>
 		<NavCMLXItem
 			{variant}
-			icon={iconBuild}
+			icon={iconPerson}
 			text="Cadastro"
 			selected={($page.url.pathname as string) === '/cadastro'}
 			href="/cadastro"
@@ -56,7 +56,6 @@
 		box-sizing: border-box;
 		width: 100vw;
 	}
-
 
 	@media (width < 37.5rem) {
 		.main {
