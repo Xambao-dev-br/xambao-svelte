@@ -3,9 +3,10 @@
   import "../app.css";
   	import iconHome from "@ktibow/iconset-material-symbols/home";
   	import iconPerson from "@ktibow/iconset-material-symbols/person";
-	import iconStore from "@ktibow/iconset-material-symbols/build";
+	  import iconStore from "@ktibow/iconset-material-symbols/build";
   	import { page } from "$app/stores";
   	import { onMount } from "svelte";
+
 let variant: "compact" | "medium" | "large" = $state("compact");
 let { children } = $props();
 onMount(() => {
