@@ -6,8 +6,9 @@ const AUTH_URL = 'http://localhost:5175'
 export const handle: Handle = async ({ event, resolve }) => {
     const sessionId = event.cookies.get('sessionId')
     const { data: session } = await supabase.from('User').select('sessionid').eq('sessionid', sessionId)
-    if (!session) {
+    if (!session || session.length===0) {
         redirect(303, AUTH_URL)
     }
+
     return resolve(event)
 }

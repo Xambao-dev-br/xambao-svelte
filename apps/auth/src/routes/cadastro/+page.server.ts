@@ -2,8 +2,9 @@ import { supabase } from "$lib/supabase.server";
 import { fail } from "@sveltejs/kit";
 import bcrypt from 'bcrypt';
 import { redirect } from "@sveltejs/kit";
+import type {RequestEvent} from '@sveltejs/kit';
 export const actions = {
-    'default': async function ({ request, cookies }) {
+    'default': async function ({ request, cookies }: RequestEvent) {
         const form = await request.formData();
         const username = form.get('username');
         const password = form.get('password') as string;

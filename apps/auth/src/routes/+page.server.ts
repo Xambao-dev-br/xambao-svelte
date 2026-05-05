@@ -2,8 +2,9 @@ import { supabase } from "$lib/supabase.server";
 import bcrypt from 'bcrypt'
 import { redirect } from "@sveltejs/kit";
 import { randomUUID } from "crypto";
+import type {RequestEvent} from '@sveltejs/kit';
 export const actions = {
-    'default': async function ({ request, cookies }) {
+    'default': async function ({ request, cookies }: RequestEvent) {
         const form = await request.formData();
         const userf = form.get('user');
         const passwordf = form.get('password');
@@ -18,8 +19,6 @@ export const actions = {
         if (isValid) {
             const sessionId = randomUUID();
             const { data, error } = await supabase.from('User').update({ sessionid: sessionId }).eq('username', userf).select()
-            console.log(error)
-            console.log(data)
             cookies.set('sessionId', sessionId, {
                 path: '/',
                 httpOnly: true,

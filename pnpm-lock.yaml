@@ -96,7 +96,7 @@ importers:
         version: 5.55.1
       svelte-check:
         specifier: ^4.4.2
-        version: 4.4.5(picomatch@4.0.4)(svelte@5.55.1)(typescript@5.9.3)
+        version: 4.4.5(picomatch@4.0.3)(svelte@5.55.1)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -124,76 +124,6 @@ importers:
       resend:
         specifier: ^6.12.2
         version: 6.12.2
-    devDependencies:
-      '@eslint/compat':
-        specifier: ^2.0.3
-        version: 2.0.3(eslint@10.1.0(jiti@2.6.1))
-      '@eslint/js':
-        specifier: ^10.0.1
-        version: 10.0.1(eslint@10.1.0(jiti@2.6.1))
-      '@fontsource-variable/google-sans-flex':
-        specifier: ^5.2.1
-        version: 5.2.1
-      '@ktibow/iconset-material-symbols':
-        specifier: ^0.0.1764827375
-        version: 0.0.1764827375
-      '@sveltejs/adapter-auto':
-        specifier: ^7.0.0
-        version: 7.0.1(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.1(@types/node@22.15.3)(jiti@2.6.1)(terser@5.46.1)))(svelte@5.55.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.15.3)(jiti@2.6.1)(terser@5.46.1)))
-      '@sveltejs/kit':
-        specifier: ^2.50.2
-        version: 2.55.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.1)(vite@7.3.1(@types/node@22.15.3)(jiti@2.6.1)(terser@5.46.1)))(svelte@5.55.1)(typescript@5.9.3)(vite@7.3.1(@types/node@22.15.3)(jiti@2.6.1)(terser@5.46.1))
-      '@sveltejs/vite-plugin-svelte':
-        specifier: ^6.2.4
-        version: 6.2.4(svelte@5.55.1)(vite@7.3.1(@types/node@22.15.3)(jiti@2.6.1)(terser@5.46.1))
-      '@types/node':
-        specifier: ^22
-        version: 22.15.3
-      eslint:
-        specifier: ^10.0.3
-        version: 10.1.0(jiti@2.6.1)
-      eslint-config-prettier:
-        specifier: ^10.1.8
-        version: 10.1.8(eslint@10.1.0(jiti@2.6.1))
-      eslint-plugin-svelte:
-        specifier: ^3.15.2
-        version: 3.16.0(eslint@10.1.0(jiti@2.6.1))(svelte@5.55.1)(ts-node@10.9.2(@types/node@22.15.3)(typescript@5.9.3))
-      globals:
-        specifier: ^17.4.0
-        version: 17.4.0
-      m3-svelte:
-        specifier: ^7.1.2
-        version: 7.1.2(svelte@5.55.1)(vite-plugin-functions-mixins@0.4.1(vite@7.3.1(@types/node@22.15.3)(jiti@2.6.1)(terser@5.46.1)))
-      prettier:
-        specifier: ^3.8.1
-        version: 3.8.1
-      prettier-plugin-svelte:
-        specifier: ^3.4.1
-        version: 3.5.1(prettier@3.8.1)(svelte@5.55.1)
-      svelte:
-        specifier: ^5.54.0
-        version: 5.55.1
-      svelte-check:
-        specifier: ^4.4.2
-        version: 4.4.5(picomatch@4.0.3)(svelte@5.55.1)(typescript@5.9.3)
-      typescript:
-        specifier: ^5.9.3
-        version: 5.9.3
-      typescript-eslint:
-        specifier: ^8.57.0
-        version: 8.58.0(eslint@10.1.0(jiti@2.6.1))(typescript@5.9.3)
-      vite:
-        specifier: ^7.3.1
-        version: 7.3.1(@types/node@22.15.3)(jiti@2.6.1)(terser@5.46.1)
-      vite-plugin-functions-mixins:
-        specifier: ^0.4.1
-        version: 0.4.1(vite@7.3.1(@types/node@22.15.3)(jiti@2.6.1)(terser@5.46.1))
-
-  apps/dndxe:
-    dependencies:
-      '@xambao/database':
-        specifier: workspace:*
-        version: link:../../packages/database
     devDependencies:
       '@eslint/compat':
         specifier: ^2.0.3
