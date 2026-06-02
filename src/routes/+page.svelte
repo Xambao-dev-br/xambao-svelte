@@ -3,6 +3,16 @@
 
 	let Button = $state();
 	let Background = $state();
+	let words = [
+		'tchê',
+		'bah!',
+		'mas que bah',
+		'é os guri',
+		'não tem como',
+		'segundo Arnold Schwazenegger',
+		'juro pra ti mn',
+		'disse Buddha'
+	];
 	onMount(async () => {
 		const module = await import('./background.svelte');
 		const m3svelte = await import('$m3/buttons/Button.svelte');
@@ -21,7 +31,7 @@
 	</div>
 	<div id="content">
 		<h1>Bem-vindo ao Xambao.dev.br</h1>
-		<h2>O site da turma do 1º ano de Info no IFRS-BG</h2>
+		<h2>O site mais maneiro da Serra Gaúcha, {words[Math.floor(Math.random() * words.length)]}</h2>
 		<Button size="m" onclick={() => open('projetos')}>Projetos</Button>
 	</div>
 </div>
