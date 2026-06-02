@@ -14,13 +14,13 @@
 	let { children } = $props();
 
 	onMount(() => {
-		const update = () => {
-			if (window.innerWidth >= 840) variant = 'large';
-			else variant = 'compact';
+		const mediaQuery = window.matchMedia('(min-width: 840px)');
+		const handleLayoutChange = (e: MediaQueryListEvent | MediaQueryList) => {
+			variant = e.matches ? 'large' : 'compact';
 		};
-		update();
-		window.addEventListener('resize', update);
-		return () => window.removeEventListener('resize', update);
+		handleLayoutChange(mediaQuery);
+		mediaQuery.addEventListener('change', handleLayoutChange);
+		return () => mediaQuery.removeEventListener('change', handleLayoutChange);
 	});
 </script>
 

@@ -1,68 +1,23 @@
-<script lang="ts">
-	import { Button } from 'm3-svelte';
-	import { Canvas, T } from '@threlte/core';
-	import { Text } from '@threlte/extras';
+<script lang="js">
 	import { onMount } from 'svelte';
 
-	let spin = $state(0);
-	onMount(() => {
-		let frame: number;
-
-		function animate() {
-			spin += 0.01;
-			frame = requestAnimationFrame(animate);
-		}
-
-		animate();
-		return () => cancelAnimationFrame(frame);
+	let Button = $state();
+	let Background = $state();
+	onMount(async () => {
+		const module = await import('./background.svelte');
+		const m3svelte = await import('$m3/buttons/Button.svelte');
+		Button = m3svelte.default;
+		Background = module.default;
 	});
 </script>
 
 <div id="body">
 	<div class="bg">
-		<Canvas>
-			<T.PerspectiveCamera makeDefault position={[0, 0, 5]} />
-			<Text
-				text="Xambao"
-				rotation.x={spin ** 1.15}
-				rotation.y={spin * 1.5 ** 2}
-				anchorX="center"
-				anchorY="middle"
-				fontSize={1}
-				depth={10}
-				position={[0, 0, 0]}
-			/>
-		</Canvas>
-	</div>
-	<div class="bg">
-		<Canvas>
-			<T.PerspectiveCamera makeDefault position={[0, 0, 5]} />
-			<Text
-				text="Xambao"
-				rotation.x={spin ** 1.8}
-				rotation.y={spin * 1.15}
-				anchorX="center"
-				anchorY="middle"
-				fontSize={1}
-				depth={10}
-				position={[0, 0, 0]}
-			/>
-		</Canvas>
-	</div>
-	<div class="bg">
-		<Canvas>
-			<T.PerspectiveCamera makeDefault position={[0, 0, 5]} />
-			<Text
-				text="Xambao"
-				rotation.x={spin * 1.33}
-				rotation.y={spin * 2.5 ** 2}
-				anchorX="center"
-				anchorY="middle"
-				fontSize={1}
-				depth={10}
-				position={[0, 0, 0]}
-			/>
-		</Canvas>
+		{#if Background}
+			<div class="bg">
+				<Background></Background>
+			</div>
+		{/if}
 	</div>
 	<div id="content">
 		<h1>Bem-vindo ao Xambao.dev.br</h1>
