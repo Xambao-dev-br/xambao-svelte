@@ -9,7 +9,7 @@
 	import { page } from '$app/state';
 	import { onMount } from 'svelte';
 	import { NavCMLX, NavCMLXItem } from 'm3-svelte';
-	import '../app.css';
+	import '$src/app.css';
 	let variant: 'compact' | 'medium' | 'large' = $state('compact');
 	let { children } = $props();
 
@@ -73,21 +73,21 @@
 				{variant}
 				icon={iconHome}
 				text="AuraClicker"
-				selected={page.url.pathname === '/auraclicker'}
+				selected={page.url.pathname === '/ac2'}
 				href="/auraclicker"
 			/>
 			<NavCMLXItem
 				{variant}
 				icon={iconStore}
 				text="Loja"
-				selected={page.url.pathname === '/auraclicker/loja'}
+				selected={page.url.pathname === '/ac2/loja'}
 				href="/auraclicker/loja"
 			/>
 			<NavCMLXItem
 				{variant}
 				icon={iconPerson}
 				text="Prestigio"
-				selected={page.url.pathname === '/auraclicker/prestigio'}
+				selected={page.url.pathname === '/ac2/prestigio'}
 				href="/auraclicker/prestigio"
 			/>
 		</NavCMLX>
@@ -141,6 +141,8 @@
 	@media (width >= 840px) {
 		.nav {
 			display: flex;
+			flex-direction: column;
+			align-items: baseline;
 			background-color: var(--m3c-surface-container);
 			height: 100dvh;
 			flex-shrink: 0;

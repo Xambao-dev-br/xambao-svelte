@@ -8,7 +8,8 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			// Cria um atalho limpo para a pasta interna da biblioteca
-			$m3: path.resolve('node_modules/m3-svelte/package')
+			$m3: path.resolve('node_modules/m3-svelte/package/'),
+			$src: path.resolve('src/'),
 		}
 	}
 });
